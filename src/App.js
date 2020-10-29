@@ -19,7 +19,6 @@ function App() {
   const [display, setDisplay] = useState(false);
 
   useEffect(() => {
-    console.log(result["temp"])
     if(result["temp"]) {
       setDisplay(true);
     }

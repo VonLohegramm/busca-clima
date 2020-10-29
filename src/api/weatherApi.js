@@ -25,8 +25,6 @@ const getInfoByIP = async (ip) => {
 
     const url = `${defaultURL}?key=${keyApi}&format=json-cors&user_ip=${ip}`;
 
-    console.log(url)
-
     const response = await Axios.get(url);
 
     const results = response["data"]["results"];
